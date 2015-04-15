@@ -32,6 +32,11 @@
 }
 
 - (id)pop {
-    return nil;
+    id returnObject = nil;
+    if (self.list.count > 0) {
+        returnObject = self.list;
+        [self.list removeObjectAtIndex:0];
+    }
+    return returnObject;
 }
 @end
