@@ -33,5 +33,10 @@
     NSAssert(stack != nil, @"stack could not be created");
 }
 
-
+- (void) testThatICanPushAnObjectOntoTheStack {
+    DMStackCollection *stack = [[DMStackCollection alloc] init];
+    [stack push: @"something for the stack"];
+    
+    NSAssert(stack.count == 1, @"stack should contain 1 object");
+}
 @end
