@@ -30,8 +30,15 @@
     NSAssert(self.stack != nil, @"stack could not be created");
 }
 
-- (void) testThatICanPushAnObjectOntoTheStack {
+- (void)testThatICanPushAnObjectOntoTheStack {
+    [self.stack push:@"something for the stack"];
+    NSAssert(self.stack.count == 1, @"stack should contain 1 object");
+}
+
+- (void)testThatICanPopAnObjectFromTheStack {
     [self.stack push: @"something for the stack"];
     NSAssert(self.stack.count == 1, @"stack should contain 1 object");
+    [self.stack pop];
+    NSAssert(self.stack.count == 0, @"stack should contain 1 object");
 }
 @end
