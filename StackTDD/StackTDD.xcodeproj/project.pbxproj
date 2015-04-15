@@ -14,6 +14,7 @@
 		11B70DEB1ADE00B600ED2176 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B70DEA1ADE00B600ED2176 /* Images.xcassets */; };
 		11B70DEE1ADE00B600ED2176 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B70DEC1ADE00B600ED2176 /* LaunchScreen.xib */; };
 		11B70DFA1ADE00B600ED2176 /* StackTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B70DF91ADE00B600ED2176 /* StackTDDTests.m */; };
+		11B70E071ADE02FF00ED2176 /* DMStackCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B70E061ADE02FF00ED2176 /* DMStackCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		11B70DF31ADE00B600ED2176 /* StackTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B70DF81ADE00B600ED2176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11B70DF91ADE00B600ED2176 /* StackTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTDDTests.m; sourceTree = "<group>"; };
+		11B70E051ADE02FF00ED2176 /* DMStackCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMStackCollection.h; sourceTree = "<group>"; };
+		11B70E061ADE02FF00ED2176 /* DMStackCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMStackCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 		11B70E041ADE010000ED2176 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				11B70E051ADE02FF00ED2176 /* DMStackCollection.h */,
+				11B70E061ADE02FF00ED2176 /* DMStackCollection.m */,
 			);
 			name = Stack;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B70DE61ADE00B600ED2176 /* ViewController.m in Sources */,
+				11B70E071ADE02FF00ED2176 /* DMStackCollection.m in Sources */,
 				11B70DE31ADE00B600ED2176 /* AppDelegate.m in Sources */,
 				11B70DE01ADE00B600ED2176 /* main.m in Sources */,
 			);

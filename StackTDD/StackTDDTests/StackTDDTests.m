@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "DMStackCollection.h"
 
 @interface StackTDDTests : XCTestCase
 
