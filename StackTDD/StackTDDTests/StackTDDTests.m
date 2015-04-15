@@ -42,4 +42,22 @@
     NSAssert(self.stack.count == 0, @"stack should contain 1 object");
 }
 
+- (void)testStackCanHoldAtleast10Objects {
+    NSUInteger itemCount;
+    for (itemCount = 0 ; itemCount < 12 ; itemCount++) {
+        [self.stack push: [NSString stringWithFormat:@"Item %lu", (unsigned long)itemCount]];
+    }
+    NSAssert(self.stack.count == 12, @"number of objects on stack should equal 12");
+    
+    NSString *objectFromStack;
+    while ((objectFromStack = [self.stack pop]) != nil) {
+        itemCount--;
+        
+        NSString *expectedObject = [NSString stringWithFormat:@"Item %lu", (unsigned long)itemCount];
+        
+        NSAssert([expectedObject isEqual:objectFromStack], @"popped item should be same as pushed");
+    }
+    
+    NSAssert(itemCount == 0, @"all items should have been popped");
+}
 @end

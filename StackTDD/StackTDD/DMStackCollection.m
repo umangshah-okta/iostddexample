@@ -34,8 +34,8 @@
 - (id)pop {
     id returnObject = nil;
     if (self.list.count > 0) {
-        returnObject = self.list;
-        [self.list removeObjectAtIndex:0];
+        returnObject = self.list[self.list.count - 1];
+        [self.list removeObjectAtIndex:self.list.count - 1];
     }
     return returnObject;
 }
